@@ -152,7 +152,7 @@ export default function CategoryPage({ products, setActivePage, setSelectedProdu
                   <div key={p.id} className="product-card" style={{ animation: 'fadeIn 0.3s ease' }}>
                     <div className="product-img-wrapper" onClick={() => handleProductDetailsClick(p.id)} style={{ cursor: 'pointer' }}>
                       <img 
-                        src={`/images/${p.imageName}`} 
+                        src={`${import.meta.env.BASE_URL}images/${p.imageName}`} 
                         alt={p.name} 
                         className="product-img"
                         onError={(e) => {

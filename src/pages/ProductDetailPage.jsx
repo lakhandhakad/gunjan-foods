@@ -56,7 +56,7 @@ export default function ProductDetailPage({ productId, products, setActivePage, 
           <div className="pdp-gallery">
             <div className="pdp-main-img-wrapper">
               <img 
-                src={`/images/${product.imageName}`} 
+                src={`${import.meta.env.BASE_URL}images/${product.imageName}`} 
                 alt={product.name} 
                 className="pdp-main-img"
                 onError={(e) => {
@@ -76,7 +76,7 @@ export default function ProductDetailPage({ productId, products, setActivePage, 
             <div className="pdp-thumb-list">
               <div className="pdp-thumb-item active">
                 <img 
-                  src={`/images/${product.imageName}`} 
+                  src={`${import.meta.env.BASE_URL}images/${product.imageName}`} 
                   alt={product.name} 
                   style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
                   onError={(e) => {
@@ -213,7 +213,7 @@ export default function ProductDetailPage({ productId, products, setActivePage, 
                 <div key={p.id} className="product-card">
                   <div className="product-img-wrapper" onClick={() => handleRelatedClick(p.id)} style={{ cursor: 'pointer' }}>
                     <img 
-                      src={`/images/${p.imageName}`} 
+                      src={`${import.meta.env.BASE_URL}images/${p.imageName}`} 
                       alt={p.name} 
                       className="product-img"
                       onError={(e) => {

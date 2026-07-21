@@ -48,7 +48,7 @@ export default function Home({ setActivePage, setSelectedProductId, products }) 
           </div>
           <div className="hero-image-container">
             <img 
-              src="/images/hero_spices.png" 
+              src={`${import.meta.env.BASE_URL}images/hero_spices.png`} 
               alt="Authentic Indian Spices and Oils" 
               className="hero-image"
               onError={(e) => {
@@ -82,7 +82,7 @@ export default function Home({ setActivePage, setSelectedProductId, products }) 
             <div className="category-card" onClick={() => handleCategorySelect('oils')}>
               <div className="category-img-container">
                 <img 
-                  src="/images/category_whole.png" 
+                  src={`${import.meta.env.BASE_URL}images/category_whole.png`} 
                   alt="Edible Oils" 
                   className="category-img"
                   onError={(e) => {
@@ -104,7 +104,7 @@ export default function Home({ setActivePage, setSelectedProductId, products }) 
             <div className="category-card" onClick={() => handleCategorySelect('spices')}>
               <div className="category-img-container">
                 <img 
-                  src="/images/category_ground.png" 
+                  src={`${import.meta.env.BASE_URL}images/category_ground.png`} 
                   alt="Pure Spices" 
                   className="category-img"
                   onError={(e) => {
@@ -126,7 +126,7 @@ export default function Home({ setActivePage, setSelectedProductId, products }) 
             <div className="category-card" onClick={() => handleCategorySelect('groceries')}>
               <div className="category-img-container">
                 <img 
-                  src="/images/category_blends.png" 
+                  src={`${import.meta.env.BASE_URL}images/category_blends.png`} 
                   alt="Groceries & Food" 
                   className="category-img"
                   onError={(e) => {
@@ -200,7 +200,7 @@ export default function Home({ setActivePage, setSelectedProductId, products }) 
               <div key={p.id} className="product-card">
                 <div className="product-img-wrapper" onClick={() => handleProductClick(p.id)} style={{ cursor: 'pointer' }}>
                   <img 
-                    src={`/images/${p.imageName}`} 
+                    src={`${import.meta.env.BASE_URL}images/${p.imageName}`} 
                     alt={p.name} 
                     className="product-img"
                     onError={(e) => {

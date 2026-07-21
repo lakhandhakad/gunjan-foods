@@ -18,7 +18,7 @@ export default function About({ onOpenInquiry }) {
         <div className="container about-intro-grid">
           <div>
             <img 
-              src="/images/about_heritage.png" 
+              src={`${import.meta.env.BASE_URL}images/about_heritage.png`} 
               alt="Indian Spice Sourcing Fields" 
               style={{ width: '100%', borderRadius: '12px', border: '6px solid var(--color-bg)', boxShadow: 'var(--shadow-md)' }}
               onError={(e) => {
