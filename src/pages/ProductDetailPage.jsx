@@ -105,12 +105,7 @@ export default function ProductDetailPage({ productId, products, setActivePage, 
               <span>4.9 / 5.0 (TradeIndia Verified Supplier)</span>
             </div>
 
-            <div className="pdp-price-guide">
-              <span style={{ fontSize: '12px', fontWeight: 500, display: 'block', textTransform: 'uppercase', color: 'var(--color-primary)', opacity: 0.8, marginBottom: '2px' }}>
-                Estimated Trade Price Guidance
-              </span>
-              {product.priceGuidance}
-            </div>
+            {/* Price guidance omitted for inquiry model */}
 
             <p className="pdp-description">{product.description}</p>
 
@@ -229,10 +224,9 @@ export default function ProductDetailPage({ productId, products, setActivePage, 
                       {p.name}
                     </h3>
                     <p className="product-desc-short">{p.description}</p>
-                    <div className="product-meta">
-                      <span className="product-price">{p.priceGuidance}</span>
-                      <button className="btn btn-secondary btn-sm" onClick={() => handleRelatedClick(p.id)} style={{ padding: '8px 16px', fontSize: '13px' }}>
-                        View
+                    <div style={{ marginTop: '12px' }}>
+                      <button className="btn btn-secondary btn-sm" onClick={() => handleRelatedClick(p.id)} style={{ padding: '8px 16px', fontSize: '13px', width: '100%' }}>
+                        View Details
                       </button>
                     </div>
                   </div>

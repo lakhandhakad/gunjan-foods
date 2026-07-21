@@ -221,14 +221,6 @@ export default function Home({ setActivePage, setSelectedProductId, products }) 
                     {p.name}
                   </h3>
                   <p className="product-desc-short">{p.description}</p>
-                  
-                  <div className="product-meta">
-                    <div>
-                      <span style={{ fontSize: '11px', color: 'var(--color-text-muted)', display: 'block' }}>Est. Price Guidance</span>
-                      <span className="product-price">{p.priceGuidance}</span>
-                    </div>
-                  </div>
-                  
                   <div className="product-actions">
                     <button 
                       className="btn btn-secondary"
